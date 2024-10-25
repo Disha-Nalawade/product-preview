@@ -25,19 +25,20 @@
         font-size: 20px;
         text-align: center;
       }
+      .btn-container {
+        display: flex;
+        justify-content: space-around;
+      }
       .buy-btn {
         padding: 10px;
-
-        width: 70px;
+        width: 100px;
         background-color: #ffff33;
         color: #ff3300;
         font-size: 15px;
         border: none;
         border-radius: 20px;
       }
-      .btn2 {
-        width: 100px;
-      }
+
       .prev-container {
         display: flex;
         justify-content: space-evenly;
@@ -59,9 +60,10 @@
         <span class="count">1</span>
         <img src="./img/minus.png" class="previmg" alt="" />
       </div>
-      <div></div>
-      <button type="button" class="buy-btn">Buy</button>
-      <button type="button" class="buy-btn btn2">Add to card</button>
+      <div class="btn-container">
+        <button type="button" class="buy-btn">Buy</button>
+        <button type="button" class="buy-btn btn2">Add to card</button>
+      </div>
     </div>
   </body>
 </html>
