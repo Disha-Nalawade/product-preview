@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .product-container {
+        background-color: #ff9980;
+        width: 240px;
+        height: 350px;
+        display: block;
+        margin: 20px auto;
+        border: 1px solid #ff471a;
+        border-radius: 10px;
+        box-shadow: 0px 10px 18px 1px #8c8c8c;
+      }
+      .pizza {
+        width: 200px;
+        height: 200px;
+        display: block;
+        margin: 7px auto;
+      }
+      .hedding {
+        font-size: 20px;
+        text-align: center;
+      }
+      .buy-btn {
+        padding: 10px;
+
+        width: 70px;
+        background-color: #ffff33;
+        color: #ff3300;
+        font-size: 15px;
+        border: none;
+        border-radius: 20px;
+      }
+      .btn2 {
+        width: 100px;
+      }
+      .prev-container {
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .previmg {
+        width: 30px;
+      }
+      .count {
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="product-container">
+      <img src="./img/pizza.png" alt="" class="pizza" />
+      <h1 class="hedding">Paneer,Onioun Pizza</h1>
+      <div class="prev-container">
+        <img src="./img/add.png" class="previmg" alt="" />
+        <span class="count">1</span>
+        <img src="./img/minus.png" class="previmg" alt="" />
+      </div>
+      <div></div>
+      <button type="button" class="buy-btn">Buy</button>
+      <button type="button" class="buy-btn btn2">Add to card</button>
+    </div>
+  </body>
+</html>
