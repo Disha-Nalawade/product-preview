@@ -17,7 +17,6 @@
       .product-container:hover {
         border: 1px solid #ff471a;
         box-shadow: 2px 10px 12px 2px black;
-
       }
       .pizza {
         width: 200px;
@@ -50,6 +49,7 @@
       }
       .previmg {
         width: 30px;
+        cursor: pointer;
       }
       .count {
         font-size: 20px;
@@ -61,14 +61,26 @@
       <img src="./img/pizza.png" alt="" class="pizza" />
       <h1 class="hedding">Paneer,Onioun Pizza</h1>
       <div class="prev-container">
-        <img src="./img/add.png" class="previmg" alt="" />
-        <span class="count">1</span>
-        <img src="./img/minus.png" class="previmg" alt="" />
+        <img src="./img/add.png" class="previmg" onclick="add()" alt="" />
+        <span class="count" id="cnt">1</span>
+        <img src="./img/minus.png" class="previmg" onclick="minus()" alt="" />
       </div>
       <div class="btn-container">
         <button type="button" class="buy-btn">Buy</button>
         <button type="button" class="buy-btn btn2">Add to card</button>
       </div>
     </div>
+    <script>
+      let cntElement = document.getElementById("cnt");
+      let cntvalue = cntElement.value;
+
+      function add() {
+        cntvalue = cntvalue++;
+        cntvalue.innerText = cntvalue.value;
+      }
+      function minus() {
+        cntvalue = cntvalue--;
+      }
+    </script>
   </body>
 </html>
