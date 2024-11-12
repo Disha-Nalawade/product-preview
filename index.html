@@ -22,7 +22,7 @@
         width: 200px;
         height: 200px;
         display: block;
-        margin: 7px auto;
+        margin: 1px auto;
       }
       .hedding {
         font-size: 20px;
@@ -72,14 +72,13 @@
     </div>
     <script>
       let cntElement = document.getElementById("cnt");
-      let cntvalue = cntElement.value;
-
+      let cnt = parseInt(cntElement.innerText);
       function add() {
-        cntvalue = cntvalue++;
-        cntvalue.innerText = cntvalue.value;
+      
+        cntElement.innerText = ++cnt;
       }
       function minus() {
-        cntvalue = cntvalue--;
+       
       }
     </script>
   </body>
