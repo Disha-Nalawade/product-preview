@@ -77,7 +77,9 @@
         cntElement.innerText = ++cnt;
       }
       function minus() {
-        cntElement.innerText = --cnt;
+        if (cnt > 1) {
+          cntElement.innerText = --cnt;
+        }
       }
     </script>
   </body>
